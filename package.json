@@ -1,0 +1,9 @@
+{
+    "name": "moxilnetwidget", 
+    "license": "GPL 3.0", 
+    "author": "Leonard Camacho", 
+    "version": "0.1", 
+    "fullName": "moxilnetwidget", 
+    "id": "jid0-B0tbzcW1aUDxyY17jOlrQqYmXDY", 
+    "description": "Extension basada en la extensión Moxilnet pero creada bajo el ambiente de Jetpack"
+}

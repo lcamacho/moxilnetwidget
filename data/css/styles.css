@@ -1,0 +1,51 @@
+/* Tomado con ligeras modificaciones de selectoul */
+body { color:#333; font-family:Arial,sans-serif; font-size:12px;  position:relative; z-index:10;  background: #e5e5e5;} 
+
+/*quick reset*/
+form,fieldset,ul,p {margin:0; padding:0;  list-style-type:none;}
+fieldset { border:0;}
+
+/* ================== */
+/* = fancy dropdown = */
+/* ================== */
+.convertToUl {display:none;}
+.fancyDrpDwn {float:left; position:relative; margin-right:10px;}
+.selectedFromList {display:block; float:left;  height:26px; background:url(../img/right_fancy_drp_bg.png) no-repeat right 0; cursor:pointer;}
+.selectedFromList b {display:block; float:left;  height:20px; background:url(../img/left_fancy_drp_bg.png) no-repeat 0 0; padding:6px 27px 0 10px; cursor:pointer;}
+
+.selectedFromList:hover {display:block; float:left;  height:26px; background:url(../img/right_fancy_drp_h_bg.png) no-repeat right 0; cursor:pointer;}
+
+
+.exSelect {position:absolute;  border: solid 1px #dedede; text-align:left; margin:0; padding:0; top:25px; left:1px; display:none; z-index:10;}
+.exSelect li{ width:100px; border-bottom: solid 1px #dedede; background:#fff;padding:6px 10px 5px 10px; cursor:pointer; color:#000;}
+.exSelect li:hover{ background:#f5f5f5;}
+
+/* Propias del proyecto  */
+.titulo {
+  background-color: #FFDD55;
+  color: #FF6600;
+  font-size: 22px;
+  text-shadow: 2px 2px 2px #000000;
+  margin: 0px auto;
+}
+.error {
+  color:red;
+  display:none;
+}
+.input {
+  clear:left;
+  padding-top:5px;
+}
+#telefono {
+  width:108px;
+}
+#mensaje {
+  resize:none;
+}
+.boton {
+  width:47px;
+  margin:0px auto;
+}
+#formulario_captcha, #captcha, .exito, .fallido {
+  display:none;
+}

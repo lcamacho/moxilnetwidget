@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
+  </head>
+  <body>
+    <h3 class="titulo">moxilnet</h3>
+    <form id="formulario_mensaje">
+<!--       <select id=tipo_mensaje name=tipo_mensaje class=convertToUl>
+        <option value="1" selected="selected">Mensaje de Texto</option>
+        <option value="2">Mensaje Multimedia</option>
+      </select> -->
+      <div class="input">
+        <div class="error">
+          El número es incorrecto
+        </div>
+        <select id="prefijo" name="prefijo" class="convertToUl">
+          <option value="416" selected="selected">416</option>
+          <option value="426">426</option>
+        </select>
+        <input type="text" id="telefono" />
+      </div>
+      <div class="input">
+        <textarea id="mensaje" name="mensaje" cols=23 rows=6 ></textarea>
+      </div>
+      <div class="input">
+        Caracteres para escribir <span class="cuenta">120</span>
+      </div>
+      <div class="boton">
+        <input type="image" src="img/moxilnet-enviarOut.png" value="Enviar" />
+      </div>
+    </form>
+    <form id="formulario_captcha">
+      <img id="espera" src="img/ajax-loader.gif" />
+      <img id="captcha" src="" />
+      <input type="text" id="captcha-respuesta" />
+      <div class="boton">
+        <input type="image" src="img/moxilnet-enviarOut.png" value="Enviar" />
+      </div>
+    </form>
+    <div class="exito">
+      Su mensaje se ha enviado correcatamente.
+    </div>
+    <div class="fallido">
+      Su mensaje no pudo sern enviado.
+    </div>
+  </body>
+</html>
