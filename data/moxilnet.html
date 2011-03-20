@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  </head>
+  <body>
+    <h3 class="titulo">Moxilnet <a href="twitter.com/mozillaVe" class="twitter">@mozillaVe</a></h3>
+
+    <form id="formulario_mensaje">
+      <div class="error_telefono">
+        Por favor revise el telefono
+      </div>
+      <select id="prefijo" name="prefijo" class="convertToUl">
+        <option value="416" selected="selected">416</option>
+        <option value="426">426</option>
+      </select>
+      <input type="text" id="telefono" />
+      <div class="error_mensaje">
+        El mensaje esta vacio
+      </div>
+      <div class="input">
+        <textarea id="mensaje" cols=23 rows=6 ></textarea>
+      </div>
+      <div class="mensaje_caracteres">
+        Caracteres para escribir <span class="cuenta">120</span>
+      </div>
+      <div class="boton">
+        <input type="submit" value="Enviar" />
+        <input type="button" class="derecha resetear" value="Limpiar" />
+      </div>
+    </form>
+
+    <form id="formulario_captcha">
+      <img id="captcha" width="185" src="" />
+      <div class="error_captcha">
+        Escriba lo que aparece en la imagen
+      </div>
+      <input type="text" id="captcha_respuesta" />
+      <div class="boton">
+        <input type="submit" value="Enviar" />
+        <input type="button" class="derecha resetear" value="Cancelar" />
+      </div>
+    </form>
+    
+    <div class="resultado">
+      <div class="respuesta"></div>
+      <div class="boton finalizar">
+        <input type="button" class="resetear" value="Aceptar" />
+      </div>
+    </div>
+    
+    <img class="en_espera" src="img/ajax-loader.gif">
+    
+  </body>
+</html>

@@ -1,5 +1,5 @@
 /* Tomado con ligeras modificaciones de selectoul */
-body { color:#333; font-family:Arial,sans-serif; font-size:12px;  position:relative; z-index:10;  background: #e5e5e5;} 
+body { color:#333; font-family:Arial,sans-serif; font-size:12px; background: #FFFFFF url(../img/logomozillavenezuela.jpg);} 
 
 /*quick reset*/
 form,fieldset,ul,p {margin:0; padding:0;  list-style-type:none;}
@@ -22,30 +22,74 @@ fieldset { border:0;}
 
 /* Propias del proyecto  */
 .titulo {
-  background-color: #FFDD55;
   color: #FF6600;
   font-size: 22px;
   text-shadow: 2px 2px 2px #000000;
-  margin: 0px auto;
+  margin: 0px auto 5px;
 }
-.error {
-  color:red;
-  display:none;
+.twitter {
+  font-size: 14px;
+  clear: left;
+  text-shadow: 1px 1px 1px #000000;
+  text-decoration: none;
+  color: #FF6600
+}  
+.error_telefono, .error_mensaje, .error_captcha {
+  color: red;
+  display: none;
+  clear: left;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 2px #FFFFFF;
 }
-.input {
-  clear:left;
-  padding-top:5px;
+.mensaje_caracteres {
+  font-size: 13px;
+  clear: left;
+  padding-top: 5px;
 }
 #telefono {
-  width:108px;
+  width: 107px;
 }
 #mensaje {
-  resize:none;
+  resize: none;
 }
 .boton {
-  width:47px;
+  margin: 10px auto 5px;
+}
+.derecha {
+  float: right;
+}
+#formulario_captcha, .resultado {
+  display: none;
+}
+#formulario_captcha {
+  margin-top: 40px;
+}
+#captcha_respuesta {
+  width: 180px;
+}
+.boton input {
+  background-color: #447821;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 1px solid transparent;
+}
+.boton input:hover {
+  background-color: #00ff00;
+}
+.en_espera {
+  display: none;
+  margin-top: 85px;
+}
+.finalizar {
+  width:57px;
   margin:0px auto;
 }
-#formulario_captcha, #captcha, .exito, .fallido {
-  display:none;
+.respuesta {
+  margin: 60px auto 30px auto;
+  text-align: center;
+  font-size: 14px;
+  color: #FF6600;
+  font-weight: bold;
+  text-shadow: 2px 1px 2px #FFFFFF;
 }
